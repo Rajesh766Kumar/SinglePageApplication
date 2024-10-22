@@ -1,0 +1,394 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+#hero {
+  height: 100vh;
+  background: url(https://images.unsplash.com/photo-1501698335706-90b736210a61?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+    no-repeat center center/cover;
+}
+#hero nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+}
+#hero nav h1 {
+  color: white;
+  font-size: 30px;
+  margin-left: 30px;
+}
+#hero nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+#hero nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  margin-right: 25px;
+}
+#hero nav ul li a:hover {
+  color: blue;
+}
+#hero .content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#hero .content h1 {
+  font-size: 60px;
+  margin-bottom: 5px;
+  color: white;
+}
+#hero .content h3 {
+  font-size: 20px;
+  color: white;
+}
+#ROOMS h1 {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  place-items: center;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+.card img {
+  height: 300px;
+  width: 300px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px;
+}
+.card h2 {
+  font-size: 20px;
+  text-align: center;
+}
+.card h3 {
+  font-size: 15px;
+  text-align: center;
+}
+
+.display-flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+  gap: 50px;
+}
+
+.container-video {
+  padding-top: 120px;
+}
+
+.container-video .display-flex .video {
+  position: relative;
+}
+.blog-content {
+  width: 422px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  position: relative;
+  right: 80px;
+  bottom: 50px;
+}
+.blog-content p {
+  text-align: justify;
+  font-size: 56;
+}
+.blog-content h1 {
+  position: relative;
+  right: 90px;
+}
+.blog-content a {
+  position: absolute;
+  left: 0px;
+  bottom: -33px;
+  text-decoration: none;
+  margin-bottom: 40px;
+}
+.blog section {
+  padding-bottom: 220px;
+}
+
+/* video size */
+.container-video .video video {
+  width: 90%;
+  margin-left: 36px;
+}
+
+/* image size */
+.container-video .video .videoImg {
+  position: absolute;
+  top: 64%;
+  width: 300px;
+  left: 50%;
+  border-top: 10px solid white;
+  border-left: 10px solid white;
+  margin-left: 30px;
+}
+/* Styling for the whole section */
+.site-section {
+  background: url(https://images.unsplash.com/photo-1514282401047-d79a71a590e8?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+    no-repeat center center/cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 120px;
+  margin-bottom: 5%;
+}
+
+/* Promo text styling */
+.para h1 {
+  font-size: 25px;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.para .button {
+  padding: 12px 30px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+.para .button:hover {
+  background-color: blue;
+}
+
+/* Styling for the content promo section */
+.cantent-promo {
+  margin-top: 30px;
+}
+
+.cantent-promo h5 {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.cantent-promo h2 {
+  font-size: 48px;
+  color: white;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.cantent-promo h4 {
+  font-size: 16px;
+  color: lightslategray;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* Additional time formatting for uniformity */
+.cantent-promo h2,
+.cantent-promo h4 {
+  margin-bottom: 10px;
+}
+
+/* Styling for the gallery section */
+.gellery section {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+.gellery-section .image-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50%;
+  margin-left: 50%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+.gellery-section .image-container h1 {
+  font-size: 24px;
+  color: black;
+}
+.gellery-section .image-container img {
+  width: 250px;
+  height: 250px;
+}
+.events-section {
+  display: flex;
+  justify-content: space-between; /* Space between each item */
+  gap: 5px;
+  padding: 10px;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.events-section h1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.admin {
+  flex: 1; /* Makes all the items grow to fit evenly */
+  padding: 5px;
+  text-align: center;
+}
+
+.admin img {
+  width: 100%;
+  height: auto;
+}
+
+.events-section .admin h1 h2,
+h3 {
+  margin: 5px 0;
+}
+
+.admin h2 {
+  font-size: 15px;
+}
+
+.admin h3 {
+  font-size: 10px;
+  color: #555;
+}
+
+.admin h3 {
+  font-size: 10px;
+  color: #777;
+}
+
+#ABOUT {
+  text-align: center;
+}
+
+.staff-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.staff {
+  display: flex;
+  align-items: flex-start;
+  max-width: 400px;
+  margin: 20px;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 5%;
+}
+
+.staff img {
+  width: 100px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.staff-info {
+  text-align: left;
+}
+
+.staff h2 {
+  margin: 10px;
+  font-size: 20px;
+  color: black;
+}
+
+.staff p {
+  color: lightslategray;
+  font-size: 15px;
+}
+
+footer {
+  background-color: lightslategray;
+  color: white;
+  padding: 40px 0;
+}
+
+footer .zara {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .row {
+  flex: 1 1 1 300px;
+  margin: 10px;
+}
+
+footer h1 {
+  font-size: 5%;
+  margin-bottom: 20px;
+  color: white;
+}
+
+footer p {
+  font-size: 15px;
+  margin-right: 25px;
+}
+
+footer button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+footer button:hover {
+  background-color: white;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+footer ul li a:hover {
+  color: silver;
+}
